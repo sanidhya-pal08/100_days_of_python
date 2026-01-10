@@ -1,0 +1,7 @@
+# a=(1,)
+# print(type(a))
+# b=(1,2,3,4,5,6)
+# print(b[5])
+a = (7, 0, 8, 0, 0, 9)
+print(a.count(0))
+print(a.index(0))

@@ -1,0 +1,12 @@
+s={1,2,3,4,5,6,7}
+s.add(566)
+print(s)
+t=s.copy()
+s.clear()
+print(s)
+print(t)
+u=t.union({5,6,77,8,9,2})
+print(t)
+print(u)
+v=u.intersection({2,3,77,32,11})
+print(v)
