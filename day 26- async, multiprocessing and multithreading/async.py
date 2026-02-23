@@ -1,16 +1,20 @@
-import time
+import time 
 import asyncio
 async def func1():
+    print("hi")
     await asyncio.sleep(1)
-    print("nc1")
+    print("func1ended")
 async def func2():
+    print("hi")
     await asyncio.sleep(1)
-    print("nc2")
+    print("func2ended")
 async def func3():
-    await asyncio.sleep(4)
-    print("nc3")
-async def  main():
-    task=asyncio.create_task(func1())
-    await func2()
+    print("hi")
+    await asyncio.sleep(1)
+    print("func3ended")
+async def main():
+    await func1()
+    task=asyncio.create_task(func2())
     await func3()
+
 asyncio.run(main())
